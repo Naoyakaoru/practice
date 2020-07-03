@@ -5,59 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .news h2 {
-            font-size: 24px;
-            color: #888;
-            border-bottom: #ccc 1px solid;
-        }
-        div.news {
-            padding: 30px;
-            border: 3px solid #aaa;
-            margin-bottom: 50px;
-        }
-        .news a {
-            font-size: 18px;
-            color: #aaa;
-            text-decoration: none;
-        }
+        .news h2,
         .events h2 {
             font-size: 24px;
             color: #888;
             border-bottom: #ccc 1px solid;
         }
-        div.events {
+        .news,
+        .events {
             padding: 30px;
             border: 3px solid #aaa;
             margin-bottom: 50px;
         }
-        .events a {
+        .news{
+            border-color: darkorange;
+        }
+        .events{
+            border-color: deepskyblue;
+        }
+        .news ul li a,
+        .events ul li a {
             font-size: 18px;
             color: #aaa;
             text-decoration: none;
+        }
+        .news ul li a {
+            color: darkorange;
+        }
+        .events ul li a {
+            color: deepskyblue;
         }
     </style>
 </head>
 <body>
      <div class="news">
         <h2>News</h2>
-        <ul>
-            <li><a href="">新聞一</a></li>
-            <li><a href="">新聞二</a></li>
-            <li><a href="">新聞三</a></li>
-            <li><a href="">新聞四</a></li>
-            <li><a href="">新聞五</a></li>
-        </ul>
+            <ul>
+                <li><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, dolore!</a></li>
+                <li><a href="">Aspernatur incidunt vero perferendis, error soluta provident labore nihil debitis.</a></li>
+                <li><a href="">Asperiores fugit quod molestiae esse hic distinctio praesentium ratione minus?</a></li>
+                <li><a href="">Ea praesentium temporibus architecto nostrum culpa accusamus iste voluptatibus facilis.</a></li>
+                <li><a href="">Id alias, consectetur eaque impedit error at fugit illo provident.</a></li>
+            </ul>
      </div>
      <div class="events">
          <h2>Events</h2>
          <ul>
-            <li><a href="">活動一</a></li>
-            <li><a href="">活動二</a></li>
-            <li><a href="">活動三</a></li>
-            <li><a href="">活動四</a></li>
-            <li><a href="">活動五</a></li>
+            <li><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, dolore!</a></li>
+            <li><a href="">Aspernatur incidunt vero perferendis, error soluta provident labore nihil debitis.</a></li>
+            <li><a href="">Asperiores fugit quod molestiae esse hic distinctio praesentium ratione minus?</a></li>
+            <li><a href="">Ea praesentium temporibus architecto nostrum culpa accusamus iste voluptatibus facilis.</a></li>
+            <li><a href="">Id alias, consectetur eaque impedit error at fugit illo provident.</a></li>
+        </ul>
+     </div>
+     <div>
+         <ul>
+             <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+             <li><a href="#">Quaerat neque maiores corporis dolor.</a></li>
+             <li><a href="#">Sed impedit officia voluptate non.</a></li>
+             <li><a href="#">Magnam aperiam cumque dolore sed.</a></li>
+             <li><a href="#">Quaerat ipsum tempore velit voluptas?</a></li>
          </ul>
-
      </div>
 </body>
 </html>
