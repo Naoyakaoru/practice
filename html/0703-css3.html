@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: steelblue 10px solid;
+            padding: 30px;
+            background-color: lightyellow;
+            font-weight: 400;
+            font-size: 18px;
+        }
+        .b1{
+            background-color: lime;
+            color: red;
+        }
+        .b1 > div {
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="b1">
+        papa
+        <div class="b2">
+            child1
+            <div class="b3">
+                child1-1
+                <div class="b4">
+                    child1-1-1
+                    <div class="b5">
+                        child1-1-1-1
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
