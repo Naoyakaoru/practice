@@ -3,21 +3,48 @@
   padding: 0;
   list-style: none;
 }
+.section-block {
+  padding: 100px 0;
+}
 .section-container {
   max-width: 1000px;
   margin: auto;
   background-color: #eee;
-  padding-top: 60px;
-  position: relative;
 }
 .main-title {
   width: 33.333333%;
   color: #fff;
+  position: relative;
+  z-index: 3;
+}
+.section-block:nth-child(even) .main-title {
+  margin-left: auto;
 }
 .main-title h2 {
   background-color: crimson;
   font-size: 50px;
   font-weight: 400;
+  line-height: 120px;
+  padding-left: 100px;
+}
+.main-title h2 span {
+  font-weight: 100;
+  position: absolute;
+  left: -12px;
+  font-size: 100px;
+  transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  -o-transform:rotate(90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+.section-block:nth-child(even) .main-title h2 span {
+  left: 238px;
+}
+.section-block:nth-child(even) .main-title h2 {
+  padding-right: 100px;
+  padding-left: 10px;
 }
 .main-title h3 {
   font-size: 32px;
@@ -28,11 +55,16 @@
 .main-title .text {
   background-color: black;
   padding: 20px;
+  position: absolute;
 }
 .picture-block {
-  width: 80%;
-  margin-left: 10%;
+  width: 70%;
+  margin-left: 20%;
   font-size: 0;
+  position: relative;
+}
+.section-block:nth-child(even) .picture-block {
+  margin-left: 10%;
 }
 .picture-block img.main-img {
   width: 97.5%;
@@ -41,6 +73,24 @@
 }
 .picture-block img.btn-play {
   vertical-align: middle;
+}
+.section-block:nth-child(even) img.btn-play {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -20px;
+}
+.picture-block a {
+  position: relative;
+}
+.picture-block::before {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  right: -20px;
+  top: -40px;
 }
 .main-text {
   width: 80%;
@@ -52,7 +102,28 @@
   position: relative;
   z-index: 1;
 }
-.main-title {
-  position: absolute;
-  top: 0;
+.section-block:nth-child(even) .main-text {
+  margin-left: auto;
+}
+.main-text p {
+  padding-left: 16px;
+  text-indent: -12px;
+}
+.main-text p::before {
+  content: '•';
+  margin-right: 4px;
+  color: crimson;
+}
+.main-text span:first-child {
+  display: block;
+  color: crimson;
+  display: flex;
+  align-items: center;
+}
+.main-text span:first-child::after {
+  content: '';
+  flex-grow: 1;
+  height: 2px;
+  background-color: crimson;
+  margin-left: 5px;
 }
