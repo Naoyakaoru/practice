@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    p {
+      padding: 10px;
+      background-color: beige;
+    }
+    p::before {
+      content: 'p的before';
+      background-color: bisque;
+    }
+    p::after {
+      content: 'p的after';
+      background-color: burlywood;
+    }
+  </style>
+</head>
+<body>
+  <p>我是一個p</p>
+</body>
+</html>

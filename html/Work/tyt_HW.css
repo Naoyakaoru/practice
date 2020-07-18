@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.rotate {
+  position: absolute;
+  font-size: 100px;
+  transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  -o-transform:rotate(90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+header {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+.feature-list {
+  display: flex;
+  justify-content: center;
+
+}
+.feature-list li {
+  border: #ccc solid 1px;
+  border-style: dotted;
+  border-bottom: firebrick 2px solid;
+  margin: 0 5px;
+  width: 180px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+}
+.section {
+  margin: 50px 0;
+}
+.wrap {
+  position: relative;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wrap-head-row {
+  height: 20vh;
+  background-color: blue;
+}
+
+.wrap-bottom-row {
+  height: 20vh;
+  background-color: red;
+}
+
+.wrap-content-row {
+  position: absolute;
+  top: 20vh;
+  left: 20vw;
+  height: 20vh;
+  width: 50vw;
+  background-color: yellow;
+}

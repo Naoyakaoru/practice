@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.section-container {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #eee;
+  padding-top: 60px;
+  position: relative;
+}
+.main-title {
+  width: 33.333333%;
+  color: #fff;
+}
+.main-title h2 {
+  background-color: crimson;
+  font-size: 50px;
+  font-weight: 400;
+}
+.main-title h3 {
+  font-size: 32px;
+}
+.main-title p {
+
+}
+.main-title .text {
+  background-color: black;
+  padding: 20px;
+}
+.picture-block {
+  width: 80%;
+  margin-left: 10%;
+  font-size: 0;
+}
+.picture-block img.main-img {
+  width: 97.5%;
+  margin-right: -5%;
+  vertical-align: middle;
+}
+.picture-block img.btn-play {
+  vertical-align: middle;
+}
+.main-text {
+  width: 80%;
+  margin-left: 5%;
+  background-color: #ddd;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: -30px;
+  position: relative;
+  z-index: 1;
+}
+.main-title {
+  position: absolute;
+  top: 0;
+}
