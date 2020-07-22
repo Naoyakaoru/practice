@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="grid.css">
+  <style>
+    body {
+      background-color: black;
+    }
+    [class^="col-"]{
+      padding-left: 10px;
+      padding-right: 10px;
+      box-sizing: border-box;
+    }
+    .container {
+      padding: 0 10px;
+      background-color: white;
+    }
+    .row {
+      height: 100%;
+    }
+    .item {
+      font-size: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .text-container {
+      flex-grow: 1;
+    }
+    .item img {
+      width: 100%;
+    }
+    .text-container ul {
+      padding-top: 20px;
+    }
+    .text-container li {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 14px;
+      padding: 0 20px;
+    }
+    .text-container li span {
+      font-weight:900;
+      font-size: 20px;
+    }
+    .row>div:nth-child(odd) .text-container {
+      background-color: #eee;
+    }
+    .row>div:nth-child(even) .text-container{
+      background-color: #fff;
+    }
+    .row>div {
+      padding-bottom: 20px;
+    }
+    .text-container span {
+      letter-spacing: 3px;
+    }
+    .dot-border {
+      height: 16px;
+      margin-left: 10px;
+      margin-right: 10px;
+      flex-grow: 1;
+      border-bottom: 2px black dotted;
+      /* padding: 20px; */
+    }
+    .more-desc {
+      width: 100%;
+      height: 48px;
+      color: #ccc;
+      font-size: 15px;
+      letter-spacing: -.5px;
+    }
+    .price {
+      font-weight:900;
+      font-size: 20px;
+      width: 40px;
+      text-align: right;
+    }
+    .section-banner {
+      background-color: black;
+      color: white;
+      padding: 5px 20px;
+      font-size: 42px;
+      display: flex;
+      align-items: center;
+    }
+    .small-words {
+      font-size: 24px;
+      line-height: 24px;
+      margin-left: 20px;
+    }
+    .title-container {
+      width: 100%;
+      height: 200px;
+      padding: 0 20px;
+    }
+    .title-container h2 {
+      font-size: 32px;
+      margin: 5px 0;
+    }
+    .title-container p {
+      font-size: 16px;
+      font-weight: 900;
+    }
+    .title-container p span {
+      font-size: 20px;
+    }
+    p.title-price {
+      font-weight: 900;
+      color: gold;
+      margin: 10px 0;
+    }
+    p.title-price span {
+      font-size: 32px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="item">
+          <img src="https://fakeimg.pl/600x600/">
+          <div class="text-container">
+            <ul>
+              <li>
+                <span>培根蘆筍卷</span>
+                <div class="dot-border"></div>
+                <div class="price">60</div>
+                <div class="more-desc">アスパラべーコン巻 / Bacon Rooled w/Asparagus</div>
+              </li>
+              <li>
+                <span>培根麻糬卷</span>
+                <div class="dot-border"></div>
+                <div class="price">60</div>
+                <div class="more-desc">もちベーコン巻 / Bacon Rolled w/Japanese Mochi</div>
+              </li>
+              <li>
+                <span>碳烤玉米筍</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+              <li>
+                <span>日式黑糖麻糬</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+              <li>
+                <span>菜名</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+              <li>
+                <span>菜名</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="item">
+          <div class="section-banner">
+            <span>蔬菜 /</span>
+            <div class="small-words">
+              <span>野菜<br>Vegetables</span>
+            </div>
+          </div>
+          <img src="https://fakeimg.pl/400x100/">
+          <div class="text-container">
+            <ul>
+              <li>
+                <span>金針菇</span>(奶油/味噌)
+                <div class="dot-border"></div>
+                <div class="price">60</div>
+                <div class="more-desc">えのき(バター/味噌)<br>Golden Mushroom (butter or miso flavor)</div>
+              </li>
+              <li>
+                <span>培根麻糬卷</span>
+                <div class="dot-border"></div>
+                <div class="price">60</div>
+                <div class="more-desc">もちベーコン巻 / Bacon Rolled w/Japanese Mochi</div>
+              </li>
+              <li>
+                <span>碳烤玉米筍</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+              <li>
+                <span>日式黑糖麻糬</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+              <li>
+                <span>菜名</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+              <li>
+                <span>菜名</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="item">
+          <div class="title-container">
+            <h2>和風沙拉</h2>
+            <p>Salad w/Japanese Style Dressing<br><span>和風サラダ</span></p>
+            <p class="title-price">NT.<span>100</span></p>
+          </div>
+          <div class="text-container">
+            <ul>
+              <li>
+                <span>培根蘆筍卷</span>
+                <div class="dot-border"></div>
+                <div class="price">60</div>
+                <div class="more-desc">アスパラべーコン巻 / Bacon Rooled w/Asparagus</div>
+              </li>
+              <li>
+                <span>培根麻糬卷</span>
+                <div class="dot-border"></div>
+                <div class="price">60</div>
+                <div class="more-desc">もちベーコン巻 / Bacon Rolled w/Japanese Mochi</div>
+              </li>
+              <li>
+                <span>碳烤玉米筍</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+              <li>
+                <span>日式黑糖麻糬</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+              <li>
+                <span>菜名</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+              <li>
+                <span>菜名</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="item">
+          <div class="section-banner">
+            <span>單品 /</span>
+            <div class="small-words">
+              <span>単品<br>Salad & Side Dish</span>
+            </div>
+          </div>
+          <div class="text-container">
+            <ul>
+              <li>
+                <span>培根蘆筍卷</span>
+                <div class="dot-border"></div>
+                <div class="price">60</div>
+                <div class="more-desc">アスパラべーコン巻 / Bacon Rooled w/Asparagus</div>
+              </li>
+              <li>
+                <span>培根麻糬卷</span>
+                <div class="dot-border"></div>
+                <div class="price">60</div>
+                <div class="more-desc">もちベーコン巻 / Bacon Rolled w/Japanese Mochi</div>
+              </li>
+              <li>
+                <span>碳烤玉米筍</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+              <li>
+                <span>日式黑糖麻糬</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+              <li>
+                <span>菜名</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+              <li>
+                <span>菜名</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="item">
+          <img src="https://fakeimg.pl/600x600/">
+          <div class="text-container">
+            <ul>
+              <li>
+                <span>培根蘆筍卷</span>
+                <div class="dot-border"></div>
+                <div class="price">60</div>
+                <div class="more-desc">アスパラべーコン巻 / Bacon Rooled w/Asparagus</div>
+              </li>
+              <li>
+                <span>培根麻糬卷</span>
+                <div class="dot-border"></div>
+                <div class="price">60</div>
+                <div class="more-desc">もちベーコン巻 / Bacon Rolled w/Japanese Mochi</div>
+              </li>
+              <li>
+                <span>碳烤玉米筍</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+              <li>
+                <span>日式黑糖麻糬</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+              <li>
+                <span>菜名</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+              <li>
+                <span>菜名</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="item">
+          <img src="https://fakeimg.pl/600x600/">
+          <div class="text-container">
+            <ul>
+              <li>
+                <span>培根蘆筍卷</span>
+                <div class="dot-border"></div>
+                <div class="price">60</div>
+                <div class="more-desc">アスパラべーコン巻 / Bacon Rooled w/Asparagus</div>
+              </li>
+              <li>
+                <span>培根麻糬卷</span>
+                <div class="dot-border"></div>
+                <div class="price">60</div>
+                <div class="more-desc">もちベーコン巻 / Bacon Rolled w/Japanese Mochi</div>
+              </li>
+              <li>
+                <span>碳烤玉米筍</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+              <li>
+                <span>日式黑糖麻糬</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+              <li>
+                <span>菜名</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+              <li>
+                <span>菜名</span>
+                <div class="dot-border"></div>
+                <div class="price">100</div>
+                <div class="more-desc">菜的描述</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
