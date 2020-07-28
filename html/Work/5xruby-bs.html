@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ffdb2ed9b0.js" crossorigin="anonymous"></script>
+
+    <title>五倍紅寶石 | 專業程式教育機構</title>
+    <style>
+      * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      }
+      a {
+        color: inherit;
+      }
+      a:hover {
+      text-decoration: none;
+      color: inherit;
+      }
+      .hover-red:hover {
+        color: #D90845;
+      }
+      .color-grey3 {
+        color: #333333
+      }
+      .color-grey5 {
+        color: #555555
+      }
+      .color-grey6 {
+        color: #666666
+      }
+      .color-grey7 {
+        color: #777777
+      }
+      .color-grey8 {
+        color: #888888
+      }
+      .color-grey9 {
+        color: #999999
+      }
+      .color-red {
+        color: #D90845;
+      }
+      .bgc-red {
+        background-color: #D90845;
+      }
+      .bgc-greyf7 {
+        background-color: #f7f7f7;
+      }
+      .bgc-white {
+        background-color: #ffffff;
+      }
+      .header {
+        position: fixed;
+        top:0;
+        width: 100%;
+        height: 68px;
+        z-index: 1000;
+        box-shadow: 0 1px 5px #d7d7d7;
+      }
+      .header ul, .header h2{
+        margin: 0;
+      }
+      .header .row {
+        height: 68px;
+      }
+      .header-logo-box {
+        width: 222px;
+        margin-left: 15px;
+        line-height: 15px;
+      }
+      .header-logo-box img {
+        width: 80px;
+        margin-right: 5px;
+        z-index: 30;
+      }
+      .header-logo-box h2 {
+        z-index: 30;
+      }
+      .nav-btn {
+        padding: 10px 20px;
+        top: 0;
+        right: 0;
+        font-size: 32px;
+        color: #ffffff;
+      }
+      .nav-btn-click:hover {
+        cursor: pointer;
+      }
+      .nav-btn-click:active .hidden-nav {
+        display: block!important;
+      }
+      .hidden-nav:hover {
+        display: block!important;
+      }
+      .hidden-nav {
+        padding-top: 68px;
+        top: -20px;
+        left: 0;
+        right: 0;
+      }
+      .header h2 {
+        font-size: 15px;
+      }
+      .banner {
+        padding-top: 68px;
+      }
+      .look-more {
+        width: 180px;
+        color: #ffffff;
+        border-radius: 5px;
+      }
+      .look-more:hover {
+        background-color: #cd3151;
+      }
+      .container>h2:after{
+        content: '';
+        display: block;
+        height: 3px;
+        background-color: #D90845;
+        width: 80px;
+        margin:20px auto;
+      }
+      .red-tag {
+      background-color: #D90845;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 4px;
+      padding: 4px 6px;
+      display: inline-block;
+    }
+    .hot .item {
+      height: 100%;
+      outline: #cccccc solid 1.5px;
+      transition: .2s all;
+    }
+    .class-start-time {
+      position: relative;
+    }
+    .grey-tag {
+      background-color: #e6e6e6;
+      color: #666666;
+      font-size: 14px;
+      font-weight: 600;
+      position: absolute;
+      padding: 4px 6px;
+      border-radius: 4px;
+      top: -5px;
+      left: 70px;
+    }
+    .hot .item h3 + p:after {
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: #cccccc;
+      width: 100%;
+      margin: auto;
+      position: relative;
+      top: 10px;
+    }
+    .hot .item:hover {
+      box-shadow: 0 5px 20px #d7d7d7;
+      transform: translateY(-5px);
+    }
+    .advice {
+      font-size: 18px;
+    }
+    .pusher-pic {
+      border-radius: 100%;
+      width: 100px;
+    }
+    .contact-logo {
+      width: 150px;
+    }
+    </style>
+
+  </head>
+  <body>
+    <section class="section-block header bgc-white">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-between">
+          <a href="https://5xruby.tw/">
+            <div class="d-flex header-logo-box">
+              <img src="img/logo.png" alt="">
+              <h2 class="color-red">專業程式教育機構</h2>
+            </div>
+          </a>
+          <nav class="col">
+            <div class="nav-btn-click">
+              <div class="position-fixed bgc-red nav-btn d-block d-md-none">
+                <i class="fas fa-bars"></i>
+              </div>
+              <div class="hidden-nav d-none bgc-white position-fixed container-fluid pb-3">
+                <div class="nav-close">
+                  <div class="nav-btn position-fixed bgc-red nav-close">
+                    <i class="fas fa-bars"></i>
+                  </div>
+                  <ul class="text-center">
+                    <a href="#" class="color-grey7 hover-red ml-3"><li><i class="far fa-gem mr-1"></i>線上課程</li></a>
+                    <a href="#" class="color-grey7 hover-red ml-3"><li><i class="far fa-compass mr-1"></i>ASTRO Camp</li></a>
+                    <a href="#" class="color-grey7 hover-red ml-3"><li><i class="fas fa-bolt mr-1"></i>全方位課程</li></a>
+                    <a href="#" class="color-grey7 hover-red ml-3"><li>短期課程</li></a>
+                    <a href="#" class="color-grey7 hover-red ml-3"><li>專案開發</li></a>
+                    <a href="#" class="color-grey7 hover-red ml-3"><li>專欄文章</li></a>
+                    <a href="#" class="color-grey7 hover-red ml-3"><li>最新消息</li></a>
+                  </ul>
+                </div>
+            </div>
+          </div>
+            <ul class="d-none d-md-flex justify-content-end nav-menu text-center">
+              <a href="#" class="color-grey7 hover-red ml-3"><li><i class="far fa-gem mr-1"></i>線上課程</li></a>
+              <a href="#" class="color-grey7 hover-red ml-3"><li><i class="far fa-compass mr-1"></i>ASTRO Camp</li></a>
+              <a href="#" class="color-grey7 hover-red ml-3"><li><i class="fas fa-bolt mr-1"></i>全方位課程</li></a>
+              <a href="#" class="color-grey7 hover-red ml-3"><li>短期課程</li></a>
+              <a href="#" class="color-grey7 hover-red ml-3"><li>專案開發</li></a>
+              <a href="#" class="color-grey7 hover-red ml-3"><li>專欄文章</li></a>
+              <a href="#" class="color-grey7 hover-red ml-3"><li>最新消息</li></a>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section class="section-block banner bgc-white">
+      <div class="container-fluid p-0">
+        <img src="img/banner.jpg" class="w-100" alt="">
+      </div>
+    </section>
+    <section class="section-block py-5 about bgc-greyf7">
+      <div class="container">
+        <h2 class="h4 text-center color-grey5 pb-4">關於五倍紅寶石 About 5xRuby</h2>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 text-center">
+            <a href="#">
+              <img src="img/feature-list-img1-0d20ab19.png" alt="">
+              <h3 class="color-grey5 py-2">網頁設計<br>前後端課程教學</h3>
+              <p class="color-grey3">帶你掌握程式技能轉職工程師，程式課程從入門到進階讓你快速上手，學員好評推薦轉職課程！</p>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 text-center">
+            <a href="#">
+              <img src="img/feature-list-img2-26e4ca80.png" alt="">
+              <h3 class="color-grey5 py-2">頂尖技術<br>網頁製作、專案開發</h3>
+              <p class="color-grey3">網站開發到行動裝置 App 工程服務、系統設計開發甚至系統架設，提供專業的建議與頂尖的技術。</p>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 text-center">
+            <a href="#">
+              <img src="img/feature-list-img3-d0a4089e.png" alt="">
+              <h3 class="color-grey5 py-2">資訊軟體開發<br>技術顧問</h3>
+              <p class="color-grey3">協助您將現有人力快速打造為Ruby/Rails 團隊，無須經歷繁瑣的人才招募就有即戰力！</p>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 text-center">
+            <a href="#">
+              <img src="img/feature-list-img4-13321bf0.png" alt="">
+              <h3 class="color-grey5 py-2">前後端工程師<br>社群經營</h3>
+              <p class="color-grey3">Ruby 社群經營、舉辦各類活動，促進 Ruby 社群發展，歡迎前後端工程師分享交流。</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-block py-5 hot bgc-white">
+      <div class="container pb-4">
+        <h2 class="h4 text-center color-grey5 pb-4">熱門網頁設計課程推薦</h2>
+        <div class="row mb-5">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <a href="#">
+              <div class="item">
+                <img src="img/vue-js-61eaa1c7.jpg" alt="" class="w-100">
+                  <div class="red-tag my-2 mx-3">
+                    開放報名中
+                  </div>
+                <h3 class="color-grey6 h6 mx-3 mb-4">Vue.js 與 Vuex 前端開發實戰課程 - 假日班</h3>
+                <p class="color-grey9 small mx-3 mb-4">
+                  講師：許國政 (Kuro Hsu)
+                </p>
+                <div class="class-start-time color-grey9 small mx-3 mb-3">
+                  開課時間
+                  <div class="grey-tag">
+                    8 月 | 假日班
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <a href="#">
+              <div class="item">
+                <img src="img/html-9a8e2291.jpg" alt="" class="w-100">
+                  <div class="red-tag my-2 mx-3">
+                    開放報名中
+                  </div>
+                <h3 class="color-grey6 h6 mx-3 mb-4">HTML 網頁設計新手村 - 假日班</h3>
+                <p class="color-grey9 small mx-3 mb-4">講師：李建杭 (Amos Lee)</p>
+                <div class="class-start-time color-grey9 small mx-3 mb-3">
+                  開課時間
+                  <div class="grey-tag">
+                    8 月 | 假日班
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <a href="#">
+              <div class="item">
+                <img src="img/react-js-c77f3549.jpg" alt="" class="w-100">
+                <div class="red-tag my-2 mx-3">
+                  開放報名中
+                </div>
+                <h3 class="color-grey6 h6 mx-3 mb-4">ReactJS 與 Webpack 全攻略入門班 - 假日班</h3>
+                <p class="color-grey9 small mx-3 mb-4">講師：廖珀均 / 奶綠茶 (Milkmidi)</p>
+                <div class="class-start-time color-grey9 small mx-3 mb-3">
+                  開課時間
+                  <div class="grey-tag">
+                    9 月 | 假日班
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="#"><div class="look-more bgc-red p-3 h6 text-center m-auto">看更多網頁課程</div></a>
+      </div>
+    </section>
+    <section class="section-block py-5 push bgc-greyf7">
+      <div class="container">
+        <h2 class="h4 text-center color-grey5 pb-4">網頁課程推薦</h2>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-2 text-center text-md-right mb-4">
+            <img class="pusher-pic" src="img/johnsie-7322ca81.jpg" alt="">
+          </div>
+          <div class="co1-12 col-md-6">
+            <p class="comment color-grey5 text-center text-md-left">選擇程式語言很重要，但選擇優秀的導師更重要！能跟擁有多年 Ruby/Rails 實戰經驗、活躍於社群的頂尖 Rubyist 學習，將一窺程式開發殿堂之藝術！我堅信：專業事讓專業的來，而專業的「五倍紅寶石」是寶藏，就等大家來挖掘。</p>
+            <p class="h4 color-red text-center text-md-left">John Sie</p>
+            <p class="job-title color-grey8 text-center text-md-left">Accuvally Inc.共同創辦人暨營運長</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-block py-5 know bgc-white">
+      <div class="container">
+        <p class="h4 text-center color-grey5 pb-4">想更瞭解我們嗎？</p>
+        <div class="text-center">
+          <p class="mb-5 advice color-grey5">您可以看看<a href="#" class="color-red">常見問題</a>或者直接<a href="#" class="color-red">線上洽詢</a>，會有親切的客服人員回答您的問題，<br>也可以透過社群網站隨時關注我們的動態。</p>
+      <div class="sns-icon">
+        <a href="#"><img src="img/icon-fb-2f24e7a0.png" alt="" class="mr-3"></a>
+        <a href="#"><img src="img/icon-twitter-89f8d087.png" alt=""></a>
+      </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-block py-5 footer bgc-greyf7">
+      <div class="container pt-3">
+        <div class="row ">
+          <div class="contact col-12 col-md-4 mb-5">
+            <div class="contact-info">
+              <a href="#"><img class="contact-logo mb-3" src="img/logo.png" alt=""></a>
+              <div class="color-grey8 contact-icon-and-link mb-3">
+                <i class="fas fa-phone-alt"></i>
+                <a href="#">02-2331-5247</a>
+              </div>
+              <div class="color-grey8 contact-icon-and-link mb-3">
+                <i class="fas fa-envelope"></i>
+                <a href="#">hi@5xruby.tw</a>
+              </div>
+              <div class="color-grey8 contact-icon-and-link mb-3">
+                <i class="fas fa-map-marker-alt"></i>
+                <a href="#">10046 台北市中正區衡陽路 7 號 5 樓</a>
+              </div>
+            </div>
+          </div>
+          <div class="site-map col-12 col-md-8">
+            <div class="row">
+              <div class="site-map-item col-6 col-md-2 mb-3">
+                <ul>
+                  <li class="mb-2"><h4 class="h6">
+                    我們的課程
+                  </h4></li>
+                  <a href="#" class="color-grey8"><li class="mb-2">ASTRO Camp</li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2">線上課程</li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2">全方位課程</li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2">短期課程</li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2"></li></a>
+                </ul>
+              </div>
+              <div class="site-map-item col-6 col-md-2 mb-3">
+                <ul>
+                  <li class="mb-2"><h4 class="h6">
+                    服務項目
+                  </h4></li>
+                  <a href="#" class="color-grey8"><li class="mb-2">專案開發</li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2">企業代訓</li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2">空間租借</li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2"></li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2"></li></a>
+                </ul>
+              </div>
+              <div class="site-map-item col-6 col-md-2 mb-3">
+                <ul>
+                  <li class="mb-2"><h4 class="h6">
+                    關於我們
+                  </h4></li>
+                  <a href="#" class="color-grey8"><li class="mb-2">關於我們</li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2">媒體報導</li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2">團隊成員</li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2">專欄文章</li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2">最新消息</li></a>
+                </ul>
+              </div>
+              <div class="site-map-item col-6 col-md-2 mb-3">
+                <ul>
+                  <li class="mb-2"><h4 class="h6">
+                    聯絡我們
+                  </h4></li>
+                  <a href="#" class="color-grey8"><li class="mb-2">聯絡詢價</li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2">工作機會</li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2"></li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2"></li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2"></li></a>
+                </ul>
+              </div>
+              <div class="site-map-item col-6 col-md-2 mb-3">
+                <ul>
+                  <li class="mb-2"><h4 class="h6">
+                    幫助與政策
+                  </h4></li>
+                  <a href="#" class="color-grey8"><li class="mb-2">常見問題</li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2">隱私權政策</li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2">服務條款</li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2"></li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2"></li></a>
+                </ul>
+              </div>
+              <div class="site-map-item col-6 col-md-2 mb-3">
+                <ul>
+                  <li class="mb-2"><h4 class="h6">
+                    追蹤
+                  </h4></li>
+                  <a href="#" class="color-grey8"><li class="mb-2"><i class="mr-1 fab fa-facebook-square"></i>Facebook</li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2"><i class="mr-1 fab fa-github"></i>GitHub</li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2"><i class="mr-1 fab fa-line"></i>Line@</li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2"><i class="mr-1 fab fa-twitter"></i>Twitter</li></a>
+                  <a href="#" class="color-grey8"><li class="mb-2"></li></a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="copyright col-12 text-center mt-3 small">
+            © 2014 - 2020 五倍紅寶石股份有限公司 (5XRUBY CO., LTD) | 台北市短期補習班立案 第 7594 號
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

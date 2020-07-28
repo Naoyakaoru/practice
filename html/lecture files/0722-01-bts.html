@@ -1,0 +1,235 @@
+<!-- https://getbootstrap.com/docs/4.5/layout/overview/ -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+      @media screen and (min-width: 992px){
+        .ofs > .col-lg-4:nth-child(5n+4) {
+          margin-left: 16.666666%;
+        }
+      }
+      .container:nth-child(n+2) h4 {
+        margin-top: 30px;
+      }
+    </style>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+      <h4>xl&lg金字塔大小2, md2欄大小6, sm~1欄大小12</h4>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 col-lg-2"><img src="https://picsum.photos/300/200/?random=1" class="w-100 mb-4"></div>
+        <div class="w-100 d-none d-lg-block"></div>
+        <div class="col-12 col-md-6 col-lg-2"><img src="https://picsum.photos/300/200/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-2"><img src="https://picsum.photos/300/200/?random=1" class="w-100 mb-4"></div>
+        <div class="w-100 d-none d-lg-block"></div>
+        <div class="col-12 col-md-6 col-lg-2"><img src="https://picsum.photos/300/200/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-2"><img src="https://picsum.photos/300/200/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-2"><img src="https://picsum.photos/300/200/?random=1" class="w-100 mb-4"></div>
+        <div class="w-100 d-none d-lg-block"></div>
+        <div class="col-12 col-md-6 col-lg-2"><img src="https://picsum.photos/300/200/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-2"><img src="https://picsum.photos/300/200/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-2"><img src="https://picsum.photos/300/200/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-2"><img src="https://picsum.photos/300/200/?random=1" class="w-100 mb-4"></div>
+        <div class="w-100 d-none d-lg-block"></div>
+        <div class="col-12 col-md-6 col-lg-2"><img src="https://picsum.photos/300/200/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-2"><img src="https://picsum.photos/300/200/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-2"><img src="https://picsum.photos/300/200/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-2"><img src="https://picsum.photos/300/200/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-2"><img src="https://picsum.photos/300/200/?random=1" class="w-100 mb-4"></div>
+      </div>
+    </div>
+    <div class="container">
+      <h4>只有平板不要側邊欄</h4>
+      <div class="row">
+        <div class="col-12 col-lg-8"><img src="https://picsum.photos/400/400/?random=1" class="w-100"></div>
+        <div class="col-12 col-lg-4 d-md-none d-lg-block"><img src="https://picsum.photos/400/400/?random=2" class="w-100 h-100"></div>
+      </div>
+      <h4>只有手機不要看到側邊欄</h4>
+      <div class="row">
+        <div class="col-12 col-md-8"><img src="https://picsum.photos/400/400/?random=1" class="w-100"></div>
+        <div class="col-12 col-md-4 d-none d-md-block"><img src="https://picsum.photos/400/400/?random=2" class="w-100 h-100"></div>
+      </div>
+    </div>
+    <div>
+      <div class="test-flex d-flex no-gutters">
+        <div class="col">
+          <img src="https://picsum.photos/200/200/?random=1" class="w-100">
+        </div>
+        <div class="col">
+          <img src="https://picsum.photos/200/200/?random=2" class="w-100">
+        </div>
+        <div class="col">
+          <img src="https://picsum.photos/200/200/?random=3" class="w-100">
+        </div>
+        <div class="col">
+          <img src="https://picsum.photos/200/200/?random=4" class="w-100">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row ofs">
+        <div class="col-12 col-md-6 col-lg-4"><img src="https://picsum.photos/300/300/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-4"><img src="https://picsum.photos/300/300/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-4"><img src="https://picsum.photos/300/300/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2"><img src="https://picsum.photos/300/300/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-4"><img src="https://picsum.photos/300/300/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-4"><img src="https://picsum.photos/300/300/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-4"><img src="https://picsum.photos/300/300/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-4"><img src="https://picsum.photos/300/300/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-4"><img src="https://picsum.photos/300/300/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-4"><img src="https://picsum.photos/300/300/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-4"><img src="https://picsum.photos/300/300/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-4"><img src="https://picsum.photos/300/300/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-4"><img src="https://picsum.photos/300/300/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-4"><img src="https://picsum.photos/300/300/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-4"><img src="https://picsum.photos/300/300/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-4"><img src="https://picsum.photos/300/300/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-4"><img src="https://picsum.photos/300/300/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-4"><img src="https://picsum.photos/300/300/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-4"><img src="https://picsum.photos/300/300/?random=1" class="w-100 mb-4"></div>
+        <div class="col-12 col-md-6 col-lg-4"><img src="https://picsum.photos/300/300/?random=1" class="w-100 mb-4"></div>
+      </div>
+    </div>
+    <div class="container-fluid px-0">
+      <div class="row no-gutters row-cols-4">
+        <div class="col"><img src="https://picsum.photos/400/400/?random=1" class="w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400/400/?random=2" class="w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400/400/?random=3" class="w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400/400/?random=4" class="w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400/400/?random=5" class="w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400/400/?random=6" class="w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400/400/?random=7" class="w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400/400/?random=8" class="w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400/400/?random=9" class="w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400/400/?random=10" class="w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400/400/?random=11" class="w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400/400/?random=12" class="w-100"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row align-items-center" style="height: 100px;">
+        <div class="col">
+          One of three columns
+        </div>
+        <div class="col">
+          One of three columns
+        </div>
+        <div class="col">
+          One of three columns
+        </div>
+      </div>
+      <div class="row row-cols-3">
+        <div class="col">
+          <img src="https://picsum.photos/300/200/?random=1" class="w-100 mb-3">
+        </div>
+        <div class="col">
+          <img src="https://picsum.photos/300/200/?random=1" class="w-100 mb-3">
+        </div>
+        <div class="col">
+          <img src="https://picsum.photos/300/200/?random=1" class="w-100 mb-3">
+        </div>
+        <div class="col">
+          <img src="https://picsum.photos/300/200/?random=1" class="w-100 mb-3">
+        </div>
+        <div class="col">
+          <img src="https://picsum.photos/300/200/?random=1" class="w-100 mb-3">
+        </div>
+      </div>
+      <h2>每行一個 -> 兩個 -> 三個</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div class="col">
+          <img src="https://picsum.photos/300/200/?random=2" class="w-100 mb-3">
+        </div>
+        <div class="col">
+          <img src="https://picsum.photos/300/200/?random=1" class="w-100 mb-3">
+        </div>
+        <div class="col">
+          <img src="https://picsum.photos/300/200/?random=2" class="w-100 mb-3">
+        </div>
+        <div class="col">
+          <img src="https://picsum.photos/300/200/?random=1" class="w-100 mb-3">
+        </div>
+        <div class="col">
+          <img src="https://picsum.photos/300/200/?random=2" class="w-100 mb-3">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2>title</h2>
+          <img src="https://picsum.photos/200/200/?random=1" class="w-100">
+        </div>
+        <div class="col">
+          <h2>title</h2>
+          <img src="https://picsum.photos/200/200/?random=1" class="w-100">
+        </div>
+        <div class="w-100"></div>
+        <div class="col">
+          <h2>title</h2>
+          <img src="https://picsum.photos/200/200/?random=1" class="w-100">
+        </div>
+        <div class="col">
+          <h2>title</h2>
+          <img src="https://picsum.photos/200/200/?random=1" class="w-100">
+        </div>
+      </div>
+      <div class="row">
+        <h2 class="w-100">Title</h2>
+        <div class="col-12 col-md-12 col-lg-6 col-xl py-2">
+          <img src="https://picsum.photos/400/200/?random=1" class="w-100">
+        </div>
+        <div class="col-12 col-md-3 col-lg-6 col-xl py-2">
+          <img src="https://picsum.photos/400/200/?random=1" class="w-100">
+        </div>
+        <div class="col-12 col-md-3 col-lg-4 col-xl py-2">
+          <img src="https://picsum.photos/400/200/?random=1" class="w-100">
+        </div>
+        <div class="col-12 col-md-3 col-lg-4 col-xl py-2">
+          <img src="https://picsum.photos/400/200/?random=1" class="w-100">
+        </div>
+        <div class="col-12 col-md-3 col-lg-4 col-xl py-2">
+          <img src="https://picsum.photos/400/200/?random=1" class="w-100">
+        </div>
+      </div>
+      <div class="row">
+        <h2 class="w-100">Title</h2>
+        <div class="col"><img src="https://picsum.photos/400/300/?random=1" class="w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400/300/?random=1" class="w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400/300/?random=1" class="w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400/300/?random=1" class="w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400/300/?random=1" class="w-100"></div>
+      </div>
+      <div class="row">
+        <h2 class="w-100">Title</h2>
+        <div class="col-12 col-md-6 col-lg-12 col-xl-3">
+          <img src="https://picsum.photos/500/300/?random=1" class="w-100">
+          <p class="text-center text-md-right text-lg-center text-xl-left">舉辦轉移會員價通知無門，技術總算大哥調節手機下載認定感覺到賺錢是我說完，廣告近期字幕在這裡很熱，儘。</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <img src="https://picsum.photos/500/300/?random=2" class="w-100">
+          <p class="text-center text-md-right text-lg-center text-xl-left">類似文學言論一身模型預防算是無線千萬湖北信心迅速，大多自我手續裝備新浪說法食物轉移人數來電大概，分。</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <img src="https://picsum.photos/500/300/?random=3" class="w-100">
+          <p class="text-center text-md-right text-lg-center text-xl-left">舉辦轉移會員價通知無門，技術總算大哥調節手機下載認定感覺到賺錢是我說完，廣告近期字幕在這裡很熱，儘。</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <img src="https://picsum.photos/500/300/?random=4" class="w-100">
+          <p class="text-center text-md-right text-lg-center text-xl-left">舉辦轉移會員價通知無門，技術總算大哥調節手機下載認定感覺到賺錢是我說完，廣告近期字幕在這裡很熱，儘。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
