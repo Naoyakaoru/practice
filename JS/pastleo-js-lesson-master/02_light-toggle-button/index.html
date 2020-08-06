@@ -34,6 +34,13 @@
       background-color: #570606;
     }
   </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('toggle').addEventListener('click', function () {
+        document.body.classList.toggle('light')
+      })
+    })
+  </script>
 </head>
 <body>
   <button id='toggle'>開</button>
