@@ -35,9 +35,15 @@
     }
   </style>
   <script>
-    window.addEventListener('DOMContentLoaded', function() {
+    window.addEventListener('DOMContentLoaded', function() { //這樣就可以先load完網頁再執行這一行，不至於找不到id
       document.getElementById('toggle').addEventListener('click', function () {
         document.body.classList.toggle('light')
+        
+        if (this.textContent === '開'){
+          this.textContent = '關'
+        } else {
+          this.textContent = '開'
+        }
       })
     })
   </script>
