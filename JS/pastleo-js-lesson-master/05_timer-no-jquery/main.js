@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', function(){
       timer = setInterval(function(){
         cnt = cnt + 1
         seconds.textContent = (Math.floor(cnt / 10))
-        document.querySelector('.dots ')
+        document.querySelector('.dots').insertAdjacentElement('afterbegin', document.querySelector('.dots>div:last-child'))
       },100)
     }
   })
