@@ -38,6 +38,7 @@ button:active {
   background: linear-gradient(-90deg, #f5d2c5, #efeab3);
   overflow: hidden;
   height: 40px;
+  transition: .5s; /* 新增換場時間 */
 }
 
 #seconds {
