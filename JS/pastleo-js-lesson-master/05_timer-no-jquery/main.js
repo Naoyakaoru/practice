@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', function(){
         seconds.textContent = (Math.floor(cnt / 10))
         document.querySelector('.dots').insertAdjacentElement('afterbegin', document.querySelector('.dots>div:last-child'))
       },100)
-      run_tag.style.height = null
+      run_tag.style.height = null //若點擊開始，則移除run_tag的height inline-style (0)
     }
   })
 })
