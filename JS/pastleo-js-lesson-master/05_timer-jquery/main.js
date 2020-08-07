@@ -13,9 +13,9 @@ $(document).ready(function(){ //引入jQuery
       running = true
       interval = setInterval(() => {  //DOM API, 可以用clearInterval()停止
         cnt = cnt + 1
-        $('#seconds').text(cnt)
+        $('#seconds').text(Math.floor(cnt/10))
         $('.dots div:last-child').prependTo($('.dots'))
-      }, 1000);
+      }, 100);
       $('#running').slideDown()
     }
   })
