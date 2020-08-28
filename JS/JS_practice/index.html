@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" name="name" id="name" class="inputCol">
+  <input type="password" name="pw" id="password" class="inputCol">
+  <button id="btn">Login</button>
+
+  <script>
+    const ENTER = 13;
+    for(let el of document.querySelectorAll('.inputCol')) {
+      el.addEventListener('keypress', ({keyCode, srcElement}) => {
+        if (keyCode === ENTER) {
+          checkInputAndLogin(srcElement.id);
+        }
+      })
+    }
+    
+    function checkInputAndLogin(srcElementId) {
+      console.log(srcElementId)
+      let nameVal = document.getElementById('name').value;
+      let pwVal = document.getElementById('password').value;
+      console.log("n", nameVal, "p", pwVal)
+      // if () {
+
+      // }
+    }
+
+    document.querySelector('#btn').addEventListener('click', () => {
+      alert('login!!!!')
+    })
+
+  </script>
+</body>
+</html>

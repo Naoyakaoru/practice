@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #btn {
+      height: 100px;
+      width: 100px;
+      background-color: antiquewhite;
+    }
+  </style>
+</head>
+<body>
+  <button id="btn">
+    press
+  </button>
+</body>
+  <script>
+    window.addEventListener('keydown', function(e) {
+      console.log(e)
+      if (e.key === "Enter") {
+        console.log("enter!")
+        random_color(document.querySelector('#btn'))
+      }
+    })
+    function random_color (who) {
+      console.log("#" + createZero(random(Math.pow(16,6))).toString(16))
+      who.style.backgroundColor = "#000000"
+    }
+    function createZero(n){
+      if (n.length < 6) {
+        
+      }
+    }
+  </script>
+</html>
